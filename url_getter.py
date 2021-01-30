@@ -33,13 +33,14 @@ pids = read_ids()
 
 downloaded = 0
 broken = 0
-for i, pid in enumerate(pids[:100]):
+for i, pid in enumerate(pids[:50000]):
     try:
         url = get_url(pid)
-        print(url)
+        print(f"{i} converted")
     except:
         bad_indicies.append(i)
         broken += 1
+        print(f"{i} broken")
         continue
     else:
         urls.append(url)
@@ -53,4 +54,4 @@ with open("train_label.txt", "w") as f:
 
 with open("train_urls.txt", "w") as f:
     for url in urls:
-        f.write(url + "\n")
+        f.write(url + "\n") 
