@@ -1,0 +1,9 @@
+2021-01-31 20:10:57,155 INFO    MainThread:8224 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-31 20:10:57,155 INFO    MainThread:8224 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-01-31 20:10:57,155 INFO    MainThread:8224 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-31 20:10:57,156 INFO    MainThread:8224 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210131_201057-2ororn32\logs\debug.log
+2021-01-31 20:10:57,156 INFO    MainThread:8224 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210131_201057-2ororn32\logs\debug-internal.log
+2021-01-31 20:11:03,320 INFO    MainThread:8224 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-31 20:11:03,322 INFO    MainThread:8224 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-31 20:11:03,323 INFO    MainThread:8224 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-31 20:11:03,323 INFO    MainThread:8224 [wandb_run.py:_redirect():1151] Redirects installed.

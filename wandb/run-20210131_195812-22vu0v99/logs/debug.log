@@ -1,0 +1,53 @@
+2021-01-31 19:58:12,331 INFO    MainThread:20604 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-31 19:58:12,332 INFO    MainThread:20604 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-01-31 19:58:12,332 INFO    MainThread:20604 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-31 19:58:12,332 INFO    MainThread:20604 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210131_195812-22vu0v99\logs\debug.log
+2021-01-31 19:58:12,332 INFO    MainThread:20604 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210131_195812-22vu0v99\logs\debug-internal.log
+2021-01-31 19:58:15,048 INFO    MainThread:20604 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-31 19:58:15,050 INFO    MainThread:20604 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-01-31 19:58:15,050 INFO    MainThread:20604 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-01-31 19:58:15,050 INFO    MainThread:20604 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-31 20:02:23,876 INFO    MainThread:20604 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-01-31 20:02:23,877 INFO    MainThread:20604 [wandb_run.py:_restore():1179] restore
+2021-01-31 20:02:23,892 INFO    MainThread:20604 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "feb79f74d7dd44da8d09c9e9465e842e"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 565
+      total_bytes: 565
+    }
+  }
+}
+
+2021-01-31 20:02:26,319 INFO    MainThread:20604 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "29b6284b24cb45828f68d48989158fe4"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4119
+      total_bytes: 4119
+    }
+  }
+}
+
+2021-01-31 20:02:28,323 INFO    MainThread:20604 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "bdb7ff0c7276474c9c035d47ee2197e9"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4119
+      total_bytes: 4119
+    }
+  }
+}
+
