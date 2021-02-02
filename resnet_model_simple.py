@@ -18,8 +18,8 @@ test_run = False  # Set to False during actual training
 test_run_size = 1024  # Number of image pairs used in a test run
 training_experiment = False
 val_percent = 0.2  # Percent of images used for validation
-batch_size = 16  # batch size
-lr = 0.05  # Learning Rate
+batch_size = 4  # batch size
+lr = 0.0001  # Learning Rate
 random_seed = 99  # Don't Change. Random Seed for train_test_split.
 momentum = 0.9  # If using SGD.
 epochs = 20
@@ -44,8 +44,11 @@ train_images, val_images, train_labels, val_labels = train_test_split(images, la
 model = torchvision.models.resnet50()
 model.fc = torch.nn.Linear(in_features=2048, out_features=1)
 nn.init.kaiming_uniform_(model.fc.weight)
+model.to(device)
 
 def prepare_image(image):
+    global mean
+    global std
     # Converts image to RGB
     if image.mode != 'RGB':
         image = image.convert("RGB")
@@ -64,26 +67,14 @@ def prepare_image(image):
     image = Transform(image)
     return image
 
-
 # Given a batch of images, it applies prepare_image() on each and returns
 # a tensor of image pairs
-def prepare_images(images):
+def prepare_images(image_numbers):
     #unpop_images = [Image.open("image_dataset/"+str(i[1][0])+".jpg") for i in images.iterrows()]
-    unpop_image_tensor = torch.stack([prepare_image(Image.open(
-        "image_dataset/" + str(i[1][0]) + ".jpg")) for i in images.iterrows()])
-    # del unpop_images #Deletes images to save memory
+    image_tensor = torch.stack([prepare_image(Image.open("train_images/" + str(number) + ".jpg")) for number in image_numbers])
+    return image_tensor
 
-    #pop_images = [Image.open("image_dataset/"+str(i[1][1])+".jpg") for i in images.iterrows()]
-    pop_image_tensor = torch.stack([prepare_image(Image.open(
-        "image_dataset/" + str(i[1][1]) + ".jpg")) for i in images.iterrows()])
-    #del pop_images
-
-    return torch.stack([unpop_image_tensor, pop_image_tensor], axis=1)
-
-
-# Selects a random 224x224 sample of the image, decreases overfitting
-train_transform = transforms.Compose(
-    [transforms.RandomResizedCrop([224, 224]), transforms.RandomHorizontalFlip()])
+train_transform = transforms.Compose([transforms.RandomResizedCrop([224, 224]), transforms.RandomHorizontalFlip()])
 centre_crop = transforms.CenterCrop([224, 224])
 
 
@@ -93,7 +84,67 @@ train_labels = torch.Tensor(train_labels)
 train_ds = TensorDataset(train_images, train_labels)
 train_dl = DataLoader(train_ds, batch_size, shuffle=True)
 
-for batch in train_dl:
-    image_nums, label = batch
-    image_nums = image_nums.tolist()
-    break
+val_images = torch.Tensor(val_images)
+val_labels = torch.Tensor(val_labels)
+
+val_ds = TensorDataset(val_images, val_labels)
+val_dl = DataLoader(val_ds, batch_size)
+
+@torch.no_grad() #Makes it so that gradients aren't kept track of during evaluation
+def evaluate(model, val_dl):#Evaluates the model on the test_set
+    global device
+
+    model.eval()
+    losses = []
+    
+    for batch in val_dl:
+        image_nums, labels = batch
+        image_nums = [int(num) for num in image_nums.tolist()]
+        images = prepare_images(image_nums)
+        images = centre_crop(images)
+        images = images.to(device)
+        labels = labels.to(device)
+
+        labels = labels.unsqueeze(1)
+        preds = model(images)
+        loss = loss_fn(preds, labels).item()
+
+        losses.append(loss)
+    
+    return np.mean(np.array(losses))
+
+
+def fit(model, train_dl, val_dl, lr, epochs):
+    global device
+    global momentum
+    opt = torch.optim.Adam(model.parameters(), lr, weight_decay=0.0001)
+
+    for epoch in range(epochs):
+        training_losses = []
+        # TRAINING STEP
+        ##########################################################################
+        model.train()
+        for batch in train_dl:
+            image_nums, labels = batch
+            image_nums = [int(num) for num in image_nums.tolist()]
+            images = prepare_images(image_nums)
+            images = train_transform(images)
+            images = images.to(device)
+            labels = labels.to(device)
+
+            labels = labels.unsqueeze(1)
+            preds = model(images)
+            loss = loss_fn(preds, labels)
+            loss.backward()
+            opt.step()
+            opt.zero_grad()
+            training_losses.append(loss.item())
+        epoch_train_loss = np.mean(np.array(training_losses))
+        ##########################################################################
+
+        #VALIDATION STEP
+        epoch_val_loss = evaluate(model, val_dl)
+
+        print(f"Epoch {epoch +1 }/{epochs}, Training Loss:{epoch_train_loss}, Validation Loss:{epoch_val_loss}")
+
+fit(model, train_dl, val_dl, lr, 5)
