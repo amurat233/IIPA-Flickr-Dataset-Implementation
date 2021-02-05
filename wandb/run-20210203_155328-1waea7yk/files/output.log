@@ -1,0 +1,6 @@
+MODEL NOT LOADED
+Epoch 1/5, Training Loss:10.983764673493853, Validation Loss:6.438141588165826
+Epoch 2/5, Training Loss:6.552977456772952, Validation Loss:8.000937383165473
+Epoch 3/5, Training Loss:6.511115233044478, Validation Loss:6.577975060628808
+Epoch 4/5, Training Loss:6.50229762068606, Validation Loss:6.947200905899757
+Epoch 5/5, Training Loss:6.544737386007809, Validation Loss:6.595109546844196

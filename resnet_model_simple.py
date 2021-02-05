@@ -13,20 +13,30 @@ from PIL import Image
 import numpy as np
 import json
 
-# Defining hyperparameters and certain settings
-test_run = False  # Set to False during actual training
-test_run_size = 1024  # Number of image pairs used in a test run
-training_experiment = False
-val_percent = 0.2  # Percent of images used for validation
-batch_size = 4  # batch size
-lr = 0.0001  # Learning Rate
-random_seed = 99  # Don't Change. Random Seed for train_test_split.
-momentum = 0.9  # If using SGD.
-epochs = 20
 loss_fn = nn.MSELoss()
 
 json_name = "dataset_stats.json"
 device = torch.device("cuda")
+
+wandb.init(project="SMP IIPA Pytorch")
+
+# Defining hyperparameters and certain settings
+val_percent = 0.2  # Percent of images used for validation
+batch_size = 16  # batch size
+lr = 0.0001  # Learning Rate
+momentum = 0.5
+random_seed = 99  # Don't Change. Random Seed for train_test_split.
+epochs = 10
+save = True
+freeze = False
+
+# Saves information about the run to wandb
+config = wandb.config
+config.batch_size = batch_size
+config.validation_percentage = val_percent
+config.lr = lr
+config.random_seed = random_seed
+config.freeze = freeze
 
 with open(json_name) as file:
     stats = json.load(file)
@@ -42,9 +52,22 @@ images = list(range(len(labels)))
 train_images, val_images, train_labels, val_labels = train_test_split(images, labels, test_size = val_percent, random_state=random_seed, shuffle = True)
 
 model = torchvision.models.resnet50()
+if freeze:
+    for param in model.parameters():
+        param.requires_grad = False
 model.fc = torch.nn.Linear(in_features=2048, out_features=1)
-nn.init.kaiming_uniform_(model.fc.weight)
+
+try:
+    model.load_state_dict(
+        torch.load(
+            "models/resnet_model.pth",
+            map_location=device))
+except BaseException:
+    print("MODEL NOT LOADED")
+    nn.init.kaiming_uniform_(model.fc.weight)
+
 model.to(device)
+wandb.watch(model)
 
 def prepare_image(image):
     global mean
@@ -117,7 +140,8 @@ def evaluate(model, val_dl):#Evaluates the model on the test_set
 def fit(model, train_dl, val_dl, lr, epochs):
     global device
     global momentum
-    opt = torch.optim.Adam(model.parameters(), lr, weight_decay=0.0001)
+
+    opt = torch.optim.SGD(model.parameters(), lr, momentum = momentum)
 
     for epoch in range(epochs):
         training_losses = []
@@ -140,11 +164,17 @@ def fit(model, train_dl, val_dl, lr, epochs):
             opt.zero_grad()
             training_losses.append(loss.item())
         epoch_train_loss = np.mean(np.array(training_losses))
+        wandb.log({"Training Loss": epoch_train_loss, "Epoch": epoch})
         ##########################################################################
 
         #VALIDATION STEP
         epoch_val_loss = evaluate(model, val_dl)
+        wandb.log({"Validation Loss": epoch_val_loss, "Epoch": epoch})
 
         print(f"Epoch {epoch +1 }/{epochs}, Training Loss:{epoch_train_loss}, Validation Loss:{epoch_val_loss}")
 
-fit(model, train_dl, val_dl, lr, 5)
+
+fit(model, train_dl, val_dl, lr, epochs)
+
+if save:
+    torch.save(model.state_dict(), "models/resnet_model.pth")

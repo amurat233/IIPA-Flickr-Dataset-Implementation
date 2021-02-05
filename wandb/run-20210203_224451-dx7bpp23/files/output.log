@@ -1,0 +1,10 @@
+Epoch 1/10, Training Loss:6.477369631462824, Validation Loss:18.57654335941722
+Epoch 2/10, Training Loss:6.489703009791238, Validation Loss:25.45224141603402
+Epoch 3/10, Training Loss:6.48395004311372, Validation Loss:17.651780464196865
+Epoch 4/10, Training Loss:6.4731388857291545, Validation Loss:312.4479576952373
+Epoch 5/10, Training Loss:6.477948250390892, Validation Loss:24.813726985407442
+Epoch 6/10, Training Loss:6.470327071454947, Validation Loss:40.31496197904052
+Epoch 7/10, Training Loss:6.467725308370637, Validation Loss:31.44062460788154
+Epoch 8/10, Training Loss:6.464733689463339, Validation Loss:23.931570513917524
+Epoch 9/10, Training Loss:6.465496471857341, Validation Loss:26.58279810427677
+Epoch 10/10, Training Loss:6.476856950777338, Validation Loss:64.0041056960939
