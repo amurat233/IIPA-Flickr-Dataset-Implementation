@@ -1,0 +1,52 @@
+2021-02-08 21:06:11,241 INFO    MainThread:14940 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-08 21:06:11,242 INFO    MainThread:14940 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-02-08 21:06:11,242 INFO    MainThread:14940 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-08 21:06:11,243 INFO    MainThread:14940 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210611-3qp75ttt\logs\debug.log
+2021-02-08 21:06:11,244 INFO    MainThread:14940 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210611-3qp75ttt\logs\debug-internal.log
+2021-02-08 21:06:13,818 INFO    MainThread:14940 [wandb_run.py:_console_start():1237] atexit reg
+2021-02-08 21:06:13,820 INFO    MainThread:14940 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2021-02-08 21:06:13,821 INFO    MainThread:14940 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2021-02-08 21:06:13,821 INFO    MainThread:14940 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-02-08 21:06:13,821 INFO    MainThread:14940 [wandb_config.py:__setitem__():135] config set batch_size = 16 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000026681BA9070>>
+2021-02-08 21:06:13,821 INFO    MainThread:14940 [wandb_run.py:_config_callback():549] config_cb batch_size 16 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'batch_size': 16}
+2021-02-08 21:06:13,821 INFO    MainThread:14940 [wandb_config.py:__setitem__():135] config set validation_percentage = 0.2 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000026681BA9070>>
+2021-02-08 21:06:13,822 INFO    MainThread:14940 [wandb_run.py:_config_callback():549] config_cb validation_percentage 0.2 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'batch_size': 16, 'validation_percentage': 0.2}
+2021-02-08 21:06:13,822 INFO    MainThread:14940 [wandb_config.py:__setitem__():135] config set lr = 0.01 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000026681BA9070>>
+2021-02-08 21:06:13,823 INFO    MainThread:14940 [wandb_run.py:_config_callback():549] config_cb lr 0.01 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'batch_size': 16, 'validation_percentage': 0.2, 'lr': 0.01}
+2021-02-08 21:06:13,823 INFO    MainThread:14940 [wandb_config.py:__setitem__():135] config set random_seed = 99 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000026681BA9070>>
+2021-02-08 21:06:13,824 INFO    MainThread:14940 [wandb_run.py:_config_callback():549] config_cb random_seed 99 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'batch_size': 16, 'validation_percentage': 0.2, 'lr': 0.01, 'random_seed': 99}
+2021-02-08 21:06:13,825 INFO    MainThread:14940 [wandb_config.py:__setitem__():135] config set freeze = False - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000026681BA9070>>
+2021-02-08 21:06:13,826 INFO    MainThread:14940 [wandb_run.py:_config_callback():549] config_cb freeze False {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.5', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'batch_size': 16, 'validation_percentage': 0.2, 'lr': 0.01, 'random_seed': 99, 'freeze': False}
+2021-02-08 21:06:17,052 INFO    MainThread:14940 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2021-02-08 21:06:17,053 INFO    MainThread:14940 [wandb_run.py:_restore():1179] restore
+2021-02-08 21:06:17,061 INFO    MainThread:14940 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "0397661385264631ba4db7f01d295223"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 621
+      total_bytes: 621
+    }
+  }
+}
+
+2021-02-08 21:06:19,075 INFO    MainThread:14940 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "057f80c5f46b4ba6b3ac0ca03dc4ecf6"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4253
+      total_bytes: 4253
+    }
+  }
+}
+
+2021-02-08 21:06:20,915 INFO    MainThread:14940 [wandb_run.py:_show_files():1536] logging synced files
+2021-02-08 21:06:20,922 INFO    MainThread:14940 [internal.py:handle_exit():138] Internal process exited

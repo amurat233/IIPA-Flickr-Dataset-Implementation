@@ -59,12 +59,12 @@ def get_new_stats(json_name):
         #Looks at the images in batches of 100 so that little progress is lost if the program
         #crashes
         for i in range(100):
-            seen = stats_old["n"]
-            image_name = str(seen + i)
+            seen = stats_old["n"] #Stores how many images have already been seen
+            image_name = str(seen + i) #Stores the image name
             try:
-                image = prepare_image(image_name)
+                image = prepare_image(image_name) #Opens the image
             except:
-                break
+                break #Breaks the loop once it can't find any more images
             count += 1
             images_list.append(image)
         # concatenates images in image_list and calculates stats

@@ -1,0 +1,16 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-02-06T13:13:16.852977",
+    "startedAt": "2021-02-06T13:13:14.599470",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "resnet_classifier_model.py",
+    "program": "c:\\Users\\Alikhan\\OneDrive - Tonbridge School\\School\\EPQ\\SMP Challenge\\IIPA-Flickr-Dataset-Implementation\\resnet_classifier_model.py",
+    "host": "LAPTOP-V7VI9TTP",
+    "username": "Alikhan",
+    "executable": "C:\\Users\\Alikhan\\anaconda3\\python.exe"
+}

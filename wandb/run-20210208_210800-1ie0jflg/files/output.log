@@ -1,0 +1,22 @@
+MODEL NOT LOADED
+Traceback (most recent call last):
+  File "C:\Users\Alikhan\anaconda3\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Alikhan\anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\Alikhan\.vscode\extensions\ms-python.python-2021.1.502429796\pythonFiles\lib\python\debugpy\__main__.py", line 45, in <module>
+    cli.main()
+  File "c:\Users\Alikhan\.vscode\extensions\ms-python.python-2021.1.502429796\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 444, in main
+    run()
+  File "c:\Users\Alikhan\.vscode\extensions\ms-python.python-2021.1.502429796\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 285, in run_file
+    runpy.run_path(target_as_str, run_name=compat.force_str("__main__"))
+  File "C:\Users\Alikhan\anaconda3\lib\runpy.py", line 265, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\Alikhan\anaconda3\lib\runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\Alikhan\anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\resnet_classifier_good_bad_model .py", line 179, in <module>
+  File "c:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\resnet_classifier_good_bad_model .py", line 160, in fit
+    #Calculates the average loss and accuracy for the epoch
+NameError: name 'np' is not defined

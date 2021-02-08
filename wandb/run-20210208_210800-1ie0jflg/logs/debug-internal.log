@@ -1,0 +1,568 @@
+2021-02-08 21:08:02,881 INFO    MainThread:15872 [internal.py:wandb_internal():63] W&B internal server running at pid: 15872
+2021-02-08 21:08:02,889 INFO    WriterThread:15872 [datastore.py:open_for_write():76] open: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\run-1ie0jflg.wandb
+2021-02-08 21:08:02,890 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: check_version
+2021-02-08 21:08:02,892 DEBUG   SenderThread:15872 [sender.py:send():90] send: header
+2021-02-08 21:08:02,892 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:08:02,908 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: check_version
+2021-02-08 21:08:02,915 DEBUG   Thread-10 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-02-08 21:08:02,997 DEBUG   Thread-10 :15872 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53641
+2021-02-08 21:08:03,035 DEBUG   SenderThread:15872 [sender.py:send():90] send: run
+2021-02-08 21:08:03,054 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:03,290 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:03,304 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: run_start
+2021-02-08 21:08:03,351 INFO    SenderThread:15872 [dir_watcher.py:__init__():165] watching files in: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files
+2021-02-08 21:08:03,352 INFO    SenderThread:15872 [sender.py:_start_run_threads():487] run started: 1ie0jflg with start time 1612818481
+2021-02-08 21:08:03,352 DEBUG   SenderThread:15872 [sender.py:send():90] send: summary
+2021-02-08 21:08:03,354 INFO    SenderThread:15872 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-08 21:08:03,527 DEBUG   SenderThread:15872 [sender.py:send():90] send: files
+2021-02-08 21:08:03,527 INFO    SenderThread:15872 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-02-08 21:08:03,547 DEBUG   Thread-17 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:03,600 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:08:03,600 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:08:03,601 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:08:03,612 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:03,732 DEBUG   Thread-17 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:03,741 DEBUG   Thread-17 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-08 21:08:03,781 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:03,782 DEBUG   SenderThread:15872 [sender.py:send():90] send: config
+2021-02-08 21:08:03,800 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:03,996 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:04,003 DEBUG   SenderThread:15872 [sender.py:send():90] send: config
+2021-02-08 21:08:04,016 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:04,089 DEBUG   Thread-17 :15872 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/wandb-metadata.json?Expires=1612904883&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ZzPiUUpA8sFc2beyCsR3wQAKZNHaAHkuDDa3YYG4WEpFqaT%2FosXCh4FRx3TfPG6fW3bpC%2BabktGUut%2B%2F%2FkEo36H%2FBDOBKM8yiqISo7unRaH9flh%2FNKi7H4kX91szvzbtMEp1cIcowDnmT0XpalQFHqgYuv4V7iVP9AnF0qOFpfgm4eqE1KNMyVnwrNdMQU9fF9f%2FBhoVa3OsVAQOiJlDMLLIVhm2JVLriu08JKBLSNffxQ9tt7HlhtHN4zUAAUVV0N3FCMm3n2heujPeAkoyaAZ2tSwD7BySp1F1ba5iT1Y%2BIPX3bS1NdMEL3kc%2FM3PjSZuwemOIGZEYP7%2BGjfPwhQ%3D%3D HTTP/1.1" 200 0
+2021-02-08 21:08:04,091 INFO    Thread-17 :15872 [upload_job.py:push():131] Uploaded file C:\Users\Alikhan\AppData\Local\Temp\tmpc1btdbiuwandb\kcm82n33-wandb-metadata.json
+2021-02-08 21:08:04,214 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:04,221 DEBUG   SenderThread:15872 [sender.py:send():90] send: config
+2021-02-08 21:08:04,234 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:04,340 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\config.yaml
+2021-02-08 21:08:04,341 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\output.log
+2021-02-08 21:08:04,342 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\requirements.txt
+2021-02-08 21:08:04,343 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\wandb-metadata.json
+2021-02-08 21:08:04,476 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:04,483 DEBUG   SenderThread:15872 [sender.py:send():90] send: config
+2021-02-08 21:08:04,495 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:04,707 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:04,722 DEBUG   SenderThread:15872 [sender.py:send():90] send: config
+2021-02-08 21:08:04,746 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:04,940 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:05,345 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\config.yaml
+2021-02-08 21:08:06,960 DEBUG   Thread-11 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:07,040 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:07,182 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:09,346 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:11,935 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:12,106 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:16,840 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:17,005 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:18,801 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:08:18,801 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:08:18,801 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:08:18,811 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:19,006 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:21,751 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:21,897 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:26,680 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:26,838 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:31,610 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:31,764 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:34,040 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:08:34,043 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:08:34,043 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:08:34,049 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:34,243 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:36,495 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:36,653 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:41,391 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:41,547 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:46,285 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:46,447 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:49,259 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:08:49,259 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:08:49,259 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:08:49,265 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:08:49,434 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:08:51,189 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:51,340 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:08:56,097 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:08:56,249 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:09:01,013 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:04,443 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:09:04,443 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:09:04,444 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:09:04,451 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:09:04,631 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:09:05,932 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:10,825 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:11,687 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:09:15,737 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:19,648 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:09:19,648 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:09:19,648 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:09:19,657 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:09:19,853 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:09:20,645 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:25,551 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:25,709 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:09:30,468 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:34,865 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:09:34,865 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:09:34,865 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:09:34,871 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:09:35,037 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:09:35,407 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:40,320 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:40,477 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:09:45,228 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:50,054 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:09:50,054 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:09:50,054 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:09:50,060 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:09:50,274 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:09:50,277 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:55,047 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:09:55,360 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:09:59,957 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:04,885 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:05,290 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:10:05,290 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:10:05,291 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:10:05,296 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:10:05,517 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:10:09,802 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:09,982 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:10:14,719 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:19,608 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:20,536 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:10:20,536 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:10:20,537 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:10:20,543 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:10:20,723 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:10:24,505 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:24,659 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:10:29,403 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:34,323 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:35,737 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:10:35,737 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:10:35,738 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:10:35,743 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:10:35,929 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:10:39,228 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:39,502 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:10:44,140 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:49,041 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:50,947 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:10:50,947 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:10:50,948 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:10:50,953 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:10:51,123 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:10:53,944 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:10:54,098 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:10:58,873 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:03,802 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:06,135 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:11:06,135 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:11:06,136 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:11:06,144 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:11:06,325 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:11:08,713 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:08,906 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:11:13,615 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:18,517 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:21,338 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:11:21,338 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:11:21,339 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:11:21,344 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:11:21,524 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:11:23,408 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:23,571 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:11:28,313 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:33,216 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:36,537 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:11:36,538 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:11:36,538 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:11:36,544 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:11:36,721 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:11:38,124 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:38,375 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:11:43,046 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:47,969 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:51,727 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:11:51,727 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:11:51,727 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:11:51,737 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:11:51,922 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:11:52,860 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:11:53,022 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:11:57,796 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:02,725 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:06,930 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:12:06,930 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:12:06,930 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:12:06,936 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:12:07,114 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:12:07,639 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:07,802 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:12:12,530 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:17,419 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:22,133 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:12:22,133 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:12:22,133 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:12:22,139 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:12:22,340 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:12:22,342 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:22,497 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:12:27,218 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:32,112 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:37,034 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:37,279 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:12:37,352 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:12:37,352 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:12:37,352 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:12:37,362 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:12:37,627 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:12:41,937 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:46,828 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:51,727 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:12:51,908 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:12:52,649 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:12:52,649 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:12:52,649 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:12:52,656 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:12:52,836 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:12:56,657 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:01,585 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:06,518 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:07,850 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:13:07,850 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:13:07,850 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:13:07,858 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:13:08,035 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:13:11,428 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:16,312 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:21,205 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:23,054 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:13:23,055 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:13:23,055 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:13:23,061 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:13:23,259 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:13:26,109 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:26,266 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:13:31,002 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:35,922 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:38,274 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:13:38,274 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:13:38,274 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:13:38,280 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:13:38,498 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:13:40,842 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:45,735 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:50,622 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:13:53,510 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:13:53,510 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:13:53,511 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:13:53,520 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:13:53,687 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:13:55,522 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:00,445 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:00,596 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:14:05,348 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:08,696 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:14:08,696 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:14:08,696 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:14:08,702 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:14:08,874 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:14:10,277 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:15,177 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:20,087 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:23,883 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:14:23,883 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:14:23,883 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:14:23,893 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:14:24,073 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:14:25,005 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:29,926 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:34,848 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:35,082 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:14:39,085 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:14:39,086 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:14:39,086 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:14:39,095 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:14:39,295 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:14:39,759 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:44,660 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:49,571 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:54,311 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:14:54,311 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:14:54,312 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:14:54,322 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:14:54,501 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:14:54,505 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:14:59,434 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:04,348 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:09,277 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:09,439 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:15:09,508 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:15:09,508 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:15:09,509 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:15:09,514 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:15:09,679 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:15:14,178 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:19,084 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:24,007 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:24,695 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:15:24,695 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:15:24,695 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:15:24,705 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:15:24,900 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:15:28,927 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:33,842 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:38,750 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:39,912 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:15:39,912 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:15:39,912 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:15:39,918 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:15:40,127 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:15:43,697 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:43,856 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:15:48,604 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:53,504 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:15:55,147 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:15:55,147 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:15:55,147 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:15:55,153 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:15:55,356 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:15:58,408 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:03,309 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:08,211 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:10,368 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:16:10,368 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:16:10,368 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:16:10,374 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:16:10,550 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:16:13,160 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:18,070 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:18,231 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:16:22,974 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:25,556 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:16:25,556 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:16:25,556 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:16:25,563 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:16:25,760 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:16:27,887 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:32,795 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:37,720 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:40,770 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:16:40,770 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:16:40,770 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:16:40,776 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:16:40,935 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:16:42,651 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:47,551 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:52,468 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:16:52,781 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:16:55,949 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:16:55,949 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:16:55,949 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:16:55,959 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:16:56,133 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:16:57,360 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:02,272 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:07,170 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:11,149 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:17:11,149 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:17:11,149 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:17:11,155 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:17:11,343 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:17:12,083 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:16,983 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:21,909 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:26,359 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:17:26,360 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:17:26,360 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:17:26,365 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:17:26,555 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:17:26,844 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:26,993 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:17:31,765 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:36,695 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:41,561 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:17:41,562 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:17:41,562 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:17:41,569 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:17:41,767 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:17:41,770 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:46,538 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:51,463 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:56,389 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:17:56,785 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:17:56,785 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:17:56,785 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:17:56,790 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:17:56,979 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:18:01,294 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:01,443 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:18:06,202 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:11,121 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:11,987 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:18:11,987 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:18:11,988 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:18:11,994 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:18:12,194 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:18:16,050 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:20,997 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:25,916 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:27,198 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:18:27,199 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:18:27,199 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:18:27,205 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:18:27,402 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:18:30,843 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:35,770 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:35,925 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:18:40,682 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:42,414 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:18:42,415 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:18:42,415 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:18:42,420 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:18:42,620 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:18:45,598 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:50,514 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:55,420 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:18:57,631 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:18:57,632 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:18:57,632 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:18:57,639 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:18:57,862 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:00,318 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:05,220 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:10,121 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:10,289 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:19:12,881 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:19:12,881 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:12,882 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:19:12,888 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:13,069 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:15,039 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:19,968 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:24,891 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:28,081 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:19:28,081 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:28,082 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:19:28,089 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:28,283 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:29,828 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:34,742 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:39,683 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:43,289 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: status
+2021-02-08 21:19:43,289 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:43,289 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: status
+2021-02-08 21:19:43,295 DEBUG   SenderThread:15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:43,497 DEBUG   SenderThread:15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:44,609 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:44,774 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:19:46,963 INFO    Thread-14 :15872 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\output.log
+2021-02-08 21:19:47,044 DEBUG   SenderThread:15872 [sender.py:send():90] send: exit
+2021-02-08 21:19:47,044 INFO    SenderThread:15872 [sender.py:send_exit():168] handling exit code: 1
+2021-02-08 21:19:47,044 INFO    SenderThread:15872 [sender.py:send_exit():176] send defer
+2021-02-08 21:19:47,045 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: poll_exit
+2021-02-08 21:19:47,045 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,045 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: poll_exit
+2021-02-08 21:19:47,047 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:47,047 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 0
+2021-02-08 21:19:47,047 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,048 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:47,048 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 0
+2021-02-08 21:19:47,048 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 1
+2021-02-08 21:19:47,049 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:47,049 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 1
+2021-02-08 21:19:47,165 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,166 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:47,166 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 1
+2021-02-08 21:19:47,166 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 2
+2021-02-08 21:19:47,166 DEBUG   SenderThread:15872 [sender.py:send():90] send: stats
+2021-02-08 21:19:47,167 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:47,167 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 2
+2021-02-08 21:19:47,168 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,168 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:47,168 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 2
+2021-02-08 21:19:47,168 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 3
+2021-02-08 21:19:47,169 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:47,169 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 3
+2021-02-08 21:19:47,169 DEBUG   SenderThread:15872 [sender.py:send():90] send: summary
+2021-02-08 21:19:47,170 INFO    SenderThread:15872 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-02-08 21:19:47,171 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,171 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:47,171 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 3
+2021-02-08 21:19:47,171 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 4
+2021-02-08 21:19:47,172 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:47,172 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 4
+2021-02-08 21:19:47,172 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:47,172 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:47,172 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 4
+2021-02-08 21:19:47,173 INFO    SenderThread:15872 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-08 21:19:47,980 INFO    SenderThread:15872 [dir_watcher.py:finish():309] scan: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files
+2021-02-08 21:19:47,980 INFO    SenderThread:15872 [dir_watcher.py:finish():315] scan save: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\config.yaml config.yaml
+2021-02-08 21:19:47,981 INFO    SenderThread:15872 [dir_watcher.py:finish():315] scan save: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\output.log output.log
+2021-02-08 21:19:47,982 INFO    SenderThread:15872 [dir_watcher.py:finish():315] scan save: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\requirements.txt requirements.txt
+2021-02-08 21:19:47,985 INFO    SenderThread:15872 [dir_watcher.py:finish():315] scan save: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\wandb-metadata.json wandb-metadata.json
+2021-02-08 21:19:47,985 INFO    SenderThread:15872 [dir_watcher.py:finish():315] scan save: C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\wandb-summary.json wandb-summary.json
+2021-02-08 21:19:47,995 DEBUG   Thread-18 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:47,996 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 5
+2021-02-08 21:19:47,998 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:48,006 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 5
+2021-02-08 21:19:48,006 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:48,006 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:48,007 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 5
+2021-02-08 21:19:48,007 INFO    SenderThread:15872 [file_pusher.py:finish():169] shutting down file pusher
+2021-02-08 21:19:48,007 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 6
+2021-02-08 21:19:48,009 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:48,009 DEBUG   Thread-19 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:48,010 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 6
+2021-02-08 21:19:48,020 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:48,020 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:48,021 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 6
+2021-02-08 21:19:48,030 DEBUG   Thread-20 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:48,035 DEBUG   Thread-21 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-08 21:19:48,206 DEBUG   Thread-18 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:48,213 DEBUG   Thread-18 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-08 21:19:48,216 DEBUG   Thread-19 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:48,222 DEBUG   Thread-20 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:48,226 DEBUG   Thread-19 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-08 21:19:48,232 DEBUG   Thread-20 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-08 21:19:48,244 DEBUG   Thread-21 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-08 21:19:48,251 DEBUG   Thread-21 :15872 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-08 21:19:48,349 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:19:48,489 DEBUG   Thread-11 :15872 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/file_stream HTTP/1.1" 200 None
+2021-02-08 21:19:48,492 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 7
+2021-02-08 21:19:48,493 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:48,493 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 7
+2021-02-08 21:19:48,494 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:48,494 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:48,494 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 7
+2021-02-08 21:19:48,494 INFO    SenderThread:15872 [sender.py:send_request_defer():221] send defer: 8
+2021-02-08 21:19:48,496 DEBUG   SenderThread:15872 [sender.py:send():90] send: final
+2021-02-08 21:19:48,497 DEBUG   SenderThread:15872 [sender.py:send():90] send: footer
+2021-02-08 21:19:48,497 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: defer
+2021-02-08 21:19:48,497 INFO    HandlerThread:15872 [handler.py:handle_request_defer():69] handle defer: 8
+2021-02-08 21:19:48,498 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:48,498 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: defer
+2021-02-08 21:19:48,498 INFO    SenderThread:15872 [sender.py:send_request_defer():185] handle sender defer: 8
+2021-02-08 21:19:49,055 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: poll_exit
+2021-02-08 21:19:49,056 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:49,056 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: poll_exit
+2021-02-08 21:19:49,352 DEBUG   Thread-19 :15872 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/output.log?Expires=1612905588&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=L%2FraGUaHjTgjhgegk%2BavRzSN1oqdHUL2hnuQhHTN3u6qYXC9dMWHutkFrGGbccgC%2BXkZlqwS4WqStfqC9WtQJaHQ6aC7grEdvJqVOFnpPb%2BywJlE6tqCf%2F1GlIq%2FXqM4GZdIqa4F1LPC4EhiUdxgy8%2Bt49FvZFUtS%2BRWTxa1%2BC%2FX0Maj3l%2Bw80eAUInNnw6SMwZc4zFh1OWlVpD%2FoI%2BBvAb5Ex7ujqf23ic71%2FpioP7J8YageQVsaJRyaMbcI5nrqG80NtojB3g3NAVSlnTlhXgwlrqPORru9QVkKDn3sOTMI7ABAlSdQl8lY1K3hW%2FC5mLmv7E5qhb2w4qCzpP2Rg%3D%3D HTTP/1.1" 200 0
+2021-02-08 21:19:49,355 INFO    Thread-19 :15872 [upload_job.py:push():131] Uploaded file C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\output.log
+2021-02-08 21:19:49,367 DEBUG   Thread-21 :15872 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/wandb-summary.json?Expires=1612905588&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=fOku1rQR89gXru8GW%2BHW1OuzGFyxLJUacJxDLm36Hs7sZrTLdWVIAzuBFJqW7YJYnFPajHfPBFX5Gial6nbKV5ynV3zvOvfJ1mvthmEmjNwpatidqwogICL5L%2FVxqYH4gQed%2BuRpdONqPfMN8A1MutK9A51oNlZL%2F4%2FuV3gVb8g4a0if3CZFBzPmwpZqV9vpHsCuLgDJykD7ObDFgDf9yBu9tOTwbyDUTniGDSTqGVWzc1mZcrz6nAASBAp1M3oqhkN4MYzgxbR%2BlxgG07hzYEv6%2BzAFgTzls3cj1XkA9%2F4b2aeIDDkRSSbHFaLtwnomHZzmyQi3kWdVvFqQwZw%2BWQ%3D%3D HTTP/1.1" 200 0
+2021-02-08 21:19:49,370 INFO    Thread-21 :15872 [upload_job.py:push():131] Uploaded file C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\wandb-summary.json
+2021-02-08 21:19:49,372 DEBUG   Thread-20 :15872 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/requirements.txt?Expires=1612905588&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=eV3tCi%2Frw6PcJfqgzK%2BuskDBBmwYhcxPuyIlr753cDVxsLUvFb%2Fo%2BK7asRAtox3WNZ4GX%2BtaxbqAQuz%2BbcmH0x%2BwWLSE8%2BG0%2FcvJLfGXm%2FNFfd%2FEUlRESi8XfsZYMZVjW1UwWFncC359QdUQH%2Fl4aerhwSkXMs8Aolnhd4kB6D%2BM%2FaIEO8EBJUf%2Fp5FALZ9p%2BvSmiLy2sj%2FOmmhdrXp7vt3e6m3wKH%2FKd98rB8%2FmA9exbDdkr0n8MaEw6UZq8u6U84PiSrgGH4lOUMG2VXjd%2F3W4Y70ZefhUs%2BUnt1ejqC7ZqdPMPWcQLCvFQVLBAkphZG1bubeZztIaSesydue7Xw%3D%3D HTTP/1.1" 200 0
+2021-02-08 21:19:49,375 INFO    Thread-20 :15872 [upload_job.py:push():131] Uploaded file C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\requirements.txt
+2021-02-08 21:19:49,387 DEBUG   Thread-18 :15872 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/amurat233/SMP%20IIPA%20Pytorch/1ie0jflg/config.yaml?Expires=1612905588&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=NmM3QPx7mcNxmvi3AFcQMUabrdbimZwJ8Zg3XvlyaD%2FtJkIDkn%2Ftd4lc4%2BhEULnqNwmEVeHaMV8AO7l6pCBWx3rMAc%2F5YMS5Bzd2%2BFhiOmz3YVFoWcp%2BF8IVVjdRsFGrGzTcmdpao%2BWVGg0hvoww94%2ByIzKVI4kiemOcwwTs5dZVKC1tMF5GxoSi09giy4gJI99h%2Bfker7QaYzJsoaQxCVM6Ma4I7kJWxcsSKdaHTiqAMDi%2F593ZT1WFaHnGnCDMaglYDp30pgwn2zfaEyJGTD%2BVV6IKXPbErzDhzxtZo%2FjGy3T%2FrfzgsHCEE9VG7yUEBmHOEr1u2EcK%2B4HbSuASAQ%3D%3D HTTP/1.1" 200 0
+2021-02-08 21:19:49,391 INFO    Thread-18 :15872 [upload_job.py:push():131] Uploaded file C:\Users\Alikhan\OneDrive - Tonbridge School\School\EPQ\SMP Challenge\IIPA-Flickr-Dataset-Implementation\wandb\run-20210208_210800-1ie0jflg\files\config.yaml
+2021-02-08 21:19:51,068 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: poll_exit
+2021-02-08 21:19:51,069 DEBUG   SenderThread:15872 [sender.py:send():90] send: request
+2021-02-08 21:19:51,069 DEBUG   SenderThread:15872 [sender.py:send_request():99] send_request: poll_exit
+2021-02-08 21:19:51,069 INFO    SenderThread:15872 [file_pusher.py:join():174] waiting for file pusher
+2021-02-08 21:19:51,073 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: get_summary
+2021-02-08 21:19:51,074 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: sampled_history
+2021-02-08 21:19:51,075 DEBUG   HandlerThread:15872 [handler.py:handle_request():55] handle_request: shutdown
+2021-02-08 21:19:51,075 INFO    HandlerThread:15872 [handler.py:finish():271] shutting down handler
