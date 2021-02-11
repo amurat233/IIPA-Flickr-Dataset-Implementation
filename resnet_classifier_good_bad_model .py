@@ -26,7 +26,7 @@ batch_size = 16  # batch size
 lr = 0.01  # Learning Rate
 momentum = 0.5
 random_seed = 99  # Don't Change. Random Seed for train_test_split.
-epochs = 5
+epochs = 50
 save = True
 freeze = False
 

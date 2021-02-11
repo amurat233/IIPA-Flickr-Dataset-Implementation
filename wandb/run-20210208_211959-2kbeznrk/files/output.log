@@ -1,1 +1,6 @@
 MODEL NOT LOADED
+Epoch 1/5, Training Loss:1.3057208613637175, Training Accuracy:0.3366921842098236, Validation Loss:1.473713551585382, Validation Accuracy:0.3558959364891052
+Epoch 2/5, Training Loss:1.1322235530785825, Training Accuracy:0.34931379556655884, Validation Loss:2.254114111774995, Validation Accuracy:0.3477849066257477
+Epoch 3/5, Training Loss:1.114767389823374, Training Accuracy:0.3554030656814575, Validation Loss:1.6391665201648893, Validation Accuracy:0.3600955307483673
+Epoch 4/5, Training Loss:1.1086052739007064, Training Accuracy:0.3600086569786072, Validation Loss:1.6802243529101135, Validation Accuracy:0.3740941882133484
+Epoch 5/5, Training Loss:1.1130130513249707, Training Accuracy:0.36463484168052673, Validation Loss:1.814468116510527, Validation Accuracy:0.3531785309314728
